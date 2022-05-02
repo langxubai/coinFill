@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>foorQt/2021.jpg</file>
+    </qresource>
+</RCC>
