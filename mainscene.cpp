@@ -1,6 +1,7 @@
 #include "mainscene.h"
 #include "ui_mainscene.h"
 #include<QPainter>
+#include"mypushbutton.h"
 
 MainScene::MainScene(QWidget *parent)
     : QMainWindow(parent)
@@ -15,6 +16,11 @@ MainScene::MainScene(QWidget *parent)
     connect(ui->actiontuichu,&QAction::triggered,[=](){
         this->close();
     });
+
+
+
+    beginBtn->setParent(this);
+    beginBtn->move(this->width()*0.5-beginBtn->width()*0.5,this->height()-beginBtn->height()*0.5);
 
 }
 

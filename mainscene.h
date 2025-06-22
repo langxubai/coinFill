@@ -2,6 +2,7 @@
 #define MAINSCENE_H
 
 #include <QMainWindow>
+#include "mypushbutton.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainScene; }
@@ -17,6 +18,10 @@ public:
 
 
     void paintEvent(QPaintEvent*);
+
+
+
+    myPushBUtton * beginBtn = new myPushBUtton("myPushBUtton");
 
 private:
     Ui::MainScene *ui;
